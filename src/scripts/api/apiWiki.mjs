@@ -1,17 +1,10 @@
+import { convertToJson } from "../utils/domHelpers.mjs";
 // Base URL for the English Wikipedia MediaWiki API
-const baseUrl = "https://en.wikipedia.org/w/api.php";
-
-function convertToJson(res) {
-    if (res.ok) {
-        return res.json();
-    } else {
-        throw new Error("Bad Response");
-    }
-}
+const WIKI_API_URL = "https://en.wikipedia.org/w/api.php";
 
 //functions to fetch data from Wikipedia 
 async function fetchWikiData(title) {
-    // API parameters:
+    // Breakdown of URL parameters:
     //   action=query    -> We'll query data
     //   prop=extracts   -> We want the page extract (intro summary)
     //   titles={name}   -> The page title we're querying
@@ -19,7 +12,7 @@ async function fetchWikiData(title) {
     //   explaintext=1   -> Return it as plain text (no HTML tags)
     //   format=json     -> JSON response
     //   origin=*        -> Needed for CORS in client-side fetch requests
-    const url = `${baseUrl}?action=query&prop=extracts&titles=${title}&exintro=1&explaintext=1&format=json&origin=*`;
+    const url = `${WIKI_API_URL}?action=query&prop=extracts&titles=${title}&exintro=1&explaintext=1&format=json&origin=*`;
 
     try {
         // Makes the request and parses JSON response
