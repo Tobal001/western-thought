@@ -15,3 +15,5 @@ Map of Western Thought is a web application that offers an interactive timeline 
 - `npm run build` to build final files when you are ready to turn in.
 - `npm run lint` to run ESLint against your code to find errors.
 - `npm run format` to run Prettier to automatically format your code.
+
+
