@@ -1,3 +1,3 @@
-import { testFetch } from "./api/apiWiki.mjs";
+import { testFetchGBooks } from "./api/apiGoogleBooks.mjs";
 
-testFetch();
+testFetchGBooks();
