@@ -1,4 +1,4 @@
-import { convertToJson } from "../utils/domHelpers.mjs";
+import { convertToJson } from "../utils/utils.mjs";
 // Base URL for the English Wikipedia MediaWiki API
 const WIKI_API_URL = "https://en.wikipedia.org/w/api.php";
 
@@ -32,6 +32,43 @@ async function fetchWikiData(title) {
     }
 }
 
+// In apiWiki.mjs
+export async function fetchWikiImage(title) {
+    const url = `${WIKI_API_URL}?action=query&prop=pageimages&titles=${title}&format=json&pithumbsize=200&origin=*`;
+
+
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        const pages = data?.query?.pages;
+        const pageId = Object.keys(pages)[0];
+        const page = pages[pageId];
+
+        if (page && page.thumbnail && page.thumbnail.source) {
+            return page.thumbnail.source;
+        } else {
+            throw new Error("No image available for this title.");
+        }
+    } catch (error) {
+        console.error("Error fetching Wikipedia image:", error);
+        throw error;
+    }
+}
+
+// Update showWikiImage so it passes the title:
+export async function showWikiImage(title) {
+    try {
+        const imageUrl = await fetchWikiImage(title);
+        return `<img src="${imageUrl}" alt="${title} image" />`;
+    } catch (error) {
+        console.error("Error showing Wikipedia image:", error);
+        return `<div class="error">Image not available</div>`;
+    }
+}
+
+
 export async function testFetch() {
     try {
         const summary = await fetchWikiData();
@@ -40,4 +77,5 @@ export async function testFetch() {
         console.error("Test failed:", error);
     }
 }
+
 
