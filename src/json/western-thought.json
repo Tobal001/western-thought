@@ -1,6 +1,7 @@
 {
     "WesternPhilosophy": {
         "Ancient_Greek_philosophy": {
+            "id": "Ancient_Greek_philosophy",
             "name": "Ancient Philosophy",
             "startYear": "c. 600 BCE",
             "endYear": "c. 600 CE",
@@ -235,6 +236,7 @@
             ]
         },
         "MedievalPhilosophy": {
+            "id": "MedievalPhilosophy",
             "name": "Medieval Philosophy",
             "startYear": "c. 5th century",
             "endYear": "15th century",
@@ -305,6 +307,7 @@
             ]
         },
         "RenaissancePhilosophy": {
+            "id": "RenaissancePhilosophy",
             "name": "Renaissance Philosophy",
             "startYear": "14th century",
             "endYear": "17th century",
@@ -331,6 +334,7 @@
             ]
         },
         "EarlyModernPhilosophy": {
+            "id": "EarlyModernPhilosophy",
             "name": "Early Modern Philosophy",
             "startYear": "17th century",
             "endYear": "18th century",
@@ -395,6 +399,7 @@
             ]
         },
         "EnlightenmentPhilosophy": {
+            "id": "EnlightenmentPhilosophy",
             "name": "Enlightenment Philosophy",
             "startYear": "18th century",
             "endYear": "Late 18th century",
@@ -421,6 +426,7 @@
             ]
         },
         "NineteenthCenturyPhilosophy": {
+            "id": "NineteenthCenturyPhilosophy",
             "name": "19th-Century Philosophy",
             "startYear": "1800",
             "endYear": "1900",
@@ -498,6 +504,7 @@
             ]
         },
         "TwentiethCenturyPhilosophy": {
+            "id": "TwentiethCenturyPhilosophy",
             "name": "20th-Century & Contemporary Philosophy",
             "startYear": "1900",
             "endYear": "Present",
