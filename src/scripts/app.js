@@ -5,7 +5,7 @@ import ExternalServices from './storage/externalServices.mjs';
 document.addEventListener('DOMContentLoaded', async () => {
     // Create an instance of ExternalServices.
     // In this example, the base URL is assumed to be the project root.
-    const externalServices = new ExternalServices('/');
+    const externalServices = new ExternalServices();
 
     try {
         // Fetch the philosophy data
