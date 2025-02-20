@@ -1,41 +1,25 @@
-// scripts/app.js
+// app.js
+import philosophyData from './storage/philosophyData.mjs';
 import EraList from './ui/uiTimeline.mjs';
-import ExternalServices from './storage/externalServices.mjs';
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // Create an instance of ExternalServices.
-    // In this example, the base URL is assumed to be the project root.
-    const externalServices = new ExternalServices();
-
     try {
-        // Fetch the philosophy data
-        const data = await externalServices.getPhilosophyData();
-        const westernPhilosophy = data.WesternPhilosophy;
+        // Create an instance of your data service.
+        const dataService = new philosophyData("western");
 
-        // Convert the WesternPhilosophy object into an array of eras
-        const eras = Object.values(westernPhilosophy);
+        // getData() now returns an array of era objects.
+        const eras = await dataService.getData();
 
-        // Adjust each era object (for example, add a dateRange property)
-        eras.forEach(era => {
-            // Ensure that era.startYear and era.endYear exist in your JSON data.
-            era.dateRange = `${era.startYear} - ${era.endYear}`;
-        });
-
-        // Select the container element where timeline segments will be rendered.
-        const timelineContainer = document.querySelector('#timelineContainer');
+        // Select the container where the timeline should be rendered.
+        const timelineContainer = document.querySelector('#timeline-container');
         if (!timelineContainer) {
-            throw new Error("Timeline container element not found in HTML.");
+            throw new Error('Timeline container not found in the DOM.');
         }
 
-        // Create an instance of EraList and initialize it
-        const eraListInstance = new EraList(eras, timelineContainer);
-        eraListInstance.init();
-
+        // Create an EraList instance using the fetched data.
+        const eraList = new EraList(eras, timelineContainer);
+        eraList.init();
     } catch (error) {
-        console.error("Error initializing the app:", error);
-        const timelineContainer = document.querySelector('#timelineContainer');
-        if (timelineContainer) {
-            timelineContainer.innerHTML = `<p>Error loading data. Please try again later.</p>`;
-        }
+        console.error('Error initializing the app:', error);
     }
 });
