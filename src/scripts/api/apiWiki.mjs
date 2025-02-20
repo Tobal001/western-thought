@@ -1,9 +1,10 @@
+//apiWiki.mjs
 import { convertToJson } from "../utils/utils.mjs";
 // Base URL for the English Wikipedia MediaWiki API
 const WIKI_API_URL = "https://en.wikipedia.org/w/api.php";
 
 //functions to fetch data from Wikipedia 
-async function fetchWikiData(title) {
+export async function fetchWikiData(title) {
     // Breakdown of URL parameters:
     //   action=query    -> We'll query data
     //   prop=extracts   -> We want the page extract (intro summary)
@@ -45,6 +46,7 @@ export async function fetchWikiImage(title) {
         const pages = data?.query?.pages;
         const pageId = Object.keys(pages)[0];
         const page = pages[pageId];
+    
 
         if (page && page.thumbnail && page.thumbnail.source) {
             return page.thumbnail.source;
@@ -77,5 +79,21 @@ export async function testFetch() {
         console.error("Test failed:", error);
     }
 }
+
+
+export async function testWikidata() {
+    const entity = await fetchWikidataEntity("Q36303");
+    console.log("Entity data:", entity);
+  
+    const works = await fetchNotableWorks("Q12345");
+    console.log("Notable works:", works);
+  
+    // If you want to get books written by this author using SPARQL:
+    const books = await fetchBooksByAuthor("Q12345");
+    console.log("Books by author:", books);
+  }
+  
+
+
 
 
