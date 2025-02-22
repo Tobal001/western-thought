@@ -36,7 +36,7 @@ function thinkerCardTemplate(thinker) {
 function timelineTemplate(era) {
   console.log("Rendering era:", era);
   let subContent = "";
-  
+
   // If the era has branches (sub-eras)
   if (era.Branches && era.Branches.length) {
     subContent = `<ul class="timeline timeline-centered hidden" id="sub-${era.id}"></ul>`;
@@ -49,7 +49,7 @@ function timelineTemplate(era) {
       </div>
     `;
   }
-  
+
   return `
     <div class="row" id="${era.id}">
       <div class="title">
@@ -243,7 +243,7 @@ export default class PhilosophyEras {
       if (button) {
         // Toggle the "active" class to rotate the chevron
         button.classList.toggle("active");
-    
+
         // Use the data-era attribute to find the associated sub-era container
         const eraId = button.dataset.era;
         const subEraContainer = qs(`#sub-${eraId}`);

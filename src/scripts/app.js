@@ -1,6 +1,6 @@
 // app.js
-import philosophyData from './storage/philosophyData.mjs';
-import PhilosophyEras from './ui/uiTimeline.mjs';
+import philosophyData from "./storage/philosophyData.mjs";
+import PhilosophyEras from "./ui/uiTimeline.mjs";
 
 
 const dataService = new philosophyData("western");
