@@ -1,36 +1,66 @@
 :root {
-    --font-body: Arial, Helvetica, sans-serif;
-    --font-headline: Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    /* colors */
-    --primary-color: #FF6B6B;
-    /* Replace the following with the actual computed color */
-    --primary-color-hover:
-        /* computed color value here */
-        #FF8A8A;
-    /* sizes */
+    /* Typography */
+    --font-headline: "Cormorant Garamond", serif;
+    /* Headings & Titles */
+    --font-subhead: "Playfair Display", serif;
+    /* Subheadings & Quotes */
+    --font-body: "Lora", serif;
+    /* Body Text */
+    --font-ui: "Poppins", sans-serif;
+    /* Navigation & UI Labels */
+
+    /* Colors */
+    --parchment-bg: #f5f1e6;
+    /* Soft parchment background */
+    --earthy-tone: #8b5e3c;
+    /* Earthy, deep brown */
+    --gold-accent: #d4af37;
+    /* Gold accent */
+    --dark-academia: #2e2e2e;
+    /* Dark, moody tone for text or markers */
+    --primary-color: var(--gold-accent);
+    --primary-color-hover: #e1a728;
+    /* Slightly darker gold for hover */
+
+    /* Font sizes */
     --font-base: 18px;
     --small-font: 0.8em;
     --large-font: 1.2em;
 }
 
 body {
-    color: #768390;
-    background: #FFF;
-    font-family: "Effra", Helvetica, sans-serif;
+    color: var(--dark-academia);
+    background: var(--parchment-bg);
+    font-family: var(--font-body);
     padding: 0;
     -webkit-font-smoothing: antialiased;
 }
 
+/* Headings use the headline font */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: #3D4351;
+    font-family: var(--font-headline);
+    color: var(--dark-academia);
     margin-top: 0;
 }
 
+/* Subheadings & quotes can use the subhead font */
+.subheading,
+blockquote {
+    font-family: var(--font-subhead);
+}
+
+/* Navigation & UI Labels */
+nav,
+.ui-label {
+    font-family: var(--font-ui);
+}
+
+/* Links */
 a {
     color: var(--primary-color);
 }
@@ -41,58 +71,52 @@ a:hover {
 }
 
 /*========================
-    EXAMPLE HEADER
+    HEADER
   ========================*/
-.example-header {
-    background: #3D4351;
-    color: #FFF;
+.header {
+    background: var(--dark-academia);
+    color: var(--parchment-bg);
     font-weight: 300;
     padding: 3em 1em;
     text-align: center;
 }
 
-.example-header h1 {
-    color: #FFF;
+.header h1 {
+    color: var(--parchment-bg);
     font-weight: 300;
     margin-bottom: 20px;
 }
 
-.example-header p {
+.header p {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700;
 }
 
-/*========================
-    CONTAINER FLUID
-  ========================*/
-.container-fluid .row {
-    padding: 0 0 4em 0;
-}
 
 .container-fluid .row:nth-child(even) {
-    background: #F1F4F5;
+    background: #faf7f0;
 }
 
 /*========================
-    EXAMPLE TITLE
+    TITLE
   ========================*/
-.example-title {
+.title {
     text-align: center;
-    margin-bottom: 60px;
-    padding: 3em 0;
-    border-bottom: 1px solid #E4EAEC;
+    padding-top: 3em;
+    border-bottom: 1px solid #e6ded3;
 }
 
-.example-title p {
+.title p {
     margin: 0 auto;
     font-size: 16px;
     max-width: 400px;
+    padding-bottom: 3em;
 }
 
 /*==================================
-      TIMELINE
+        TIMELINE
   ==================================*/
 .timeline {
     line-height: 1.4em;
@@ -115,6 +139,7 @@ a:hover {
 .timeline-item {
     padding-left: 40px;
     position: relative;
+    margin-bottom: 2em;
 }
 
 .timeline-item:last-child {
@@ -141,26 +166,37 @@ a:hover {
 }
 
 .timeline-marker:before {
-    background: var(--primary-color);
+    background: var(--gold-accent);
     border: 3px solid transparent;
     border-radius: 100%;
     content: "";
     display: block;
     height: 15px;
     position: absolute;
-    top: 4px;
-    left: 0;
+    top: 5px;
+    left: -2px;
     width: 15px;
     transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
+/* Smaller marker for individual thinker items */
+.thinker-item .timeline-marker:before {
+    height: 10px;
+    width: 10px;
+    border: 2px solid transparent;
+    top: 6px;
+    /* Adjust as needed for proper centering */
+}
+
+
+
 .timeline-marker:after {
     content: "";
-    width: 3px;
-    background: #CCD5DB;
+    width: 4px;
+    background: #ccd5db;
     display: block;
     position: absolute;
-    top: 24px;
+    top: 35px;
     bottom: 0;
     left: 6px;
 }
@@ -171,17 +207,16 @@ a:hover {
 
 .timeline-item:not(.period):hover .timeline-marker:before {
     background: transparent;
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--gold-accent);
 }
 
 /*----- TIMELINE CONTENT -----*/
-.timeline-content {
-    padding-bottom: 40px;
-}
+
 
 .timeline-content p:last-child {
     margin-bottom: 0;
 }
+
 
 /*----- TIMELINE PERIOD -----*/
 .period {
@@ -202,8 +237,8 @@ a:hover {
     top: 0;
     bottom: 30px;
     position: absolute;
-    border-top: 3px solid #CCD5DB;
-    border-bottom: 3px solid #CCD5DB;
+    border-top: 3px solid #ccd5db;
+    border-bottom: 3px solid #ccd5db;
 }
 
 .period .timeline-marker:after {
@@ -221,134 +256,8 @@ a:hover {
 }
 
 /*----------------------------------------------
-      MOD: TIMELINE SPLIT
+        HIDDEN
   ----------------------------------------------*/
-@media (min-width: 768px) {
-    .timeline-split .timeline {
-        display: table;
-    }
-
-    .timeline-split .timeline-item {
-        display: table-row;
-        padding: 0;
-    }
-
-    .timeline-split .timeline-info,
-    .timeline-split .timeline-marker,
-    .timeline-split .timeline-content,
-    .timeline-split .period .timeline-info {
-        display: table-cell;
-        vertical-align: top;
-    }
-
-    .timeline-split .timeline-marker {
-        position: relative;
-    }
-
-    .timeline-split .timeline-content {
-        padding-left: 30px;
-    }
-
-    .timeline-split .timeline-info {
-        padding-right: 30px;
-    }
-
-    .timeline-split .period .timeline-title {
-        position: relative;
-        left: -45px;
-    }
-}
-
-/*----------------------------------------------
-      MOD: TIMELINE CENTERED
-  ----------------------------------------------*/
-/* Note: The @extend .timeline-split; line from Sass has been omitted. */
-@media (min-width: 992px) {
-
-    .timeline-centered,
-    .timeline-centered .timeline-item,
-    .timeline-centered .timeline-info,
-    .timeline-centered .timeline-marker,
-    .timeline-centered .timeline-content {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-
-    .timeline-centered .timeline-item {
-        padding-bottom: 40px;
-        overflow: hidden;
-    }
-
-    .timeline-centered .timeline-marker {
-        position: absolute;
-        left: 50%;
-        margin-left: -7.5px;
-    }
-
-    .timeline-centered .timeline-info,
-    .timeline-centered .timeline-content {
-        width: 50%;
-    }
-
-    .timeline-centered>.timeline-item:nth-child(odd) .timeline-info {
-        float: left;
-        text-align: right;
-        padding-right: 30px;
-    }
-
-    .timeline-centered>.timeline-item:nth-child(odd) .timeline-content {
-        float: right;
-        text-align: left;
-        padding-left: 30px;
-    }
-
-    .timeline-centered>.timeline-item:nth-child(even) .timeline-info {
-        float: right;
-        text-align: left;
-        padding-left: 30px;
-    }
-
-    .timeline-centered>.timeline-item:nth-child(even) .timeline-content {
-        float: left;
-        text-align: right;
-        padding-right: 30px;
-    }
-
-    .timeline-centered>.timeline-item.period .timeline-content {
-        float: none;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .timeline-centered .timeline-item.period {
-        padding: 50px 0 90px;
-    }
-
-    .timeline-centered .period .timeline-marker:after {
-        height: 30px;
-        bottom: 0;
-        top: auto;
-    }
-
-    .timeline-centered .period .timeline-title {
-        left: auto;
-    }
-}
-
-/*----------------------------------------------
-      MOD: MARKER OUTLINE
-  ----------------------------------------------*/
-.marker-outline .timeline-marker:before {
-    background: transparent;
-    border-color: var(--primary-color);
-}
-
-.marker-outline .timeline-item:hover .timeline-marker:before {
-    background: var(--primary-color);
-}
-
 .hidden {
     display: none;
 }
@@ -359,31 +268,33 @@ a:hover {
 .card {
     background: #fff;
     border-radius: 4px;
-    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+    box-shadow: 15px 5px 15px rgba(34, 35, 58, 0.1);
     max-width: 400px;
     display: flex;
     flex-direction: row;
     border-radius: 25px;
     position: relative;
-    margin-left: 20px;
+}
+
+.card:hover {
 
 }
 
 .card h2 {
     margin: 0;
-    padding: 0 1rem;
+    padding: 1rem 0 1rem;
 }
 
 .card .title {
     padding: 1rem;
-    text-align: right;
+    text-align: left;
     color: green;
     font-weight: bold;
     font-size: 12px;
 }
 
 .card .desc {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     font-size: 12px;
 }
 
@@ -438,17 +349,376 @@ path {
 
 }
 
+.thinker-link {
+    text-decoration: none;
+}
 
+/*----------------------------------------------
+        BUTTONS
+  ----------------------------------------------*/
 button {
     border: none;
     background: none;
     font-size: 24px;
-    color: #8bc34a;
+    color: var(--gold-accent);
     cursor: pointer;
-    transition: .5s;
+    transition: transform 0.5s, color 0.5s;
+}
 
-    &:hover {
-        color: #4CAF50;
-        transform: rotate(22deg)
+button:hover {
+    color: var(--earthy-tone);
+    transform: rotate(22deg);
+}
+
+.chevron-down {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.chevron-down path {
+    fill: var(--primary-color);
+}
+
+
+/* When the button is active, rotate the chevron */
+.view-details.active .chevron-down {
+    transform: rotate(180deg);
+}
+
+
+/*----------------------------------------------
+        Custom Styling for Hellenistic Section
+  ----------------------------------------------*/
+.hellenistic-section {
+    background-color: rgba(212, 175, 55, 0.15);
+    /* subtle gold overlay */
+    border-left: 5px solid var(--gold-accent);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.hellenistic-section .timeline-title {
+    color: var(--earthy-tone);
+    font-family: var(--font-headline);
+    font-weight: bold;
+}
+
+.hellenistic-section .timeline-marker:before {
+    background: var(--gold-accent);
+}
+
+
+/*----------------------------------------------
+      MOD: TIMELINE SPLIT
+  ----------------------------------------------*/
+@media (min-width: 768px) {
+    .timeline-split .timeline {
+        display: table;
     }
+
+    .timeline-split .timeline-item {
+        display: table-row;
+        padding: 0;
+    }
+
+    .timeline-split .timeline-info,
+    .timeline-split .timeline-marker,
+    .timeline-split .timeline-content,
+    .timeline-split .period .timeline-info {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .timeline-split .timeline-marker {
+        position: relative;
+    }
+
+    .timeline-split .timeline-content {
+        padding-left: 30px;
+    }
+
+    .timeline-split .timeline-info {
+        padding-right: 30px;
+    }
+
+    .timeline-split .period .timeline-title {
+        position: relative;
+        left: -45px;
+    }
+    
+}
+
+/*----------------------------------------------
+      MOD: TIMELINE CENTERED
+  ----------------------------------------------*/
+/* Note: The @extend .timeline-split; line from Sass has been omitted. */
+@media (min-width: 992px) {
+
+    .timeline-centered,
+    .timeline-centered .timeline-item,
+    .timeline-centered .timeline-info,
+    .timeline-centered .timeline-marker,
+    .timeline-centered .timeline-content {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .timeline-centered .timeline-item {
+        padding-bottom: 40px;
+        overflow: hidden;
+    }
+
+    .timeline-centered .timeline-marker {
+        position: absolute;
+        left: 50%;
+        margin-left: -7.5px;
+
+
+    }
+
+    .timeline-centered .timeline-info,
+    .timeline-centered .timeline-content {
+        width: 48%;
+    }
+
+    .timeline-centered>.timeline-item:nth-child(odd) .timeline-info {
+        float: left;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .timeline-centered>.timeline-item:nth-child(odd) .timeline-content {
+        float: right;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .timeline-centered>.timeline-item:nth-child(even) .timeline-info {
+        float: right;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .timeline-centered>.timeline-item:nth-child(even) .timeline-content {
+        float: left;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .timeline-centered>.timeline-item:nth-child(even) .sub-era-thinkers {
+        float: right;
+        text-align: right;
+    }
+
+    .timeline-centered>.timeline-item.period .timeline-content {
+        float: none;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .timeline-centered .timeline-item.period {
+        padding: 50px 0 90px;
+    }
+
+    .timeline-centered .period .timeline-marker:after {
+        height: 30px;
+        bottom: 0;
+        top: auto;
+    }
+
+    .timeline-centered .period .timeline-title {
+        left: auto;
+    }
+
+    .timeline-centered .sub-branch-thinkers .timeline-item {
+        padding-left: 20x;
+        /* or 0, or whatever you prefer */
+    }
+
+    /* Also shift the marker closer */
+    .timeline-centered .nested-sub-branch .timeline-marker {
+        left: 20px;
+        /* match the same offset you set above */
+    }
+
+
+}
+
+/*----------------------------------------------
+      MOD: MARKER OUTLINE
+  ----------------------------------------------*/
+.marker-outline .timeline-marker:before {
+    background: transparent;
+    border-color: var(--primary-color);
+}
+
+.marker-outline .timeline-item:hover .timeline-marker:before {
+    background: var(--primary-color);
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Container for the entire detail page layout */
+.detail-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-page {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 2rem;
+    /* space between main and sidebar */
+}
+
+/* MAIN CONTENT */
+.detail-main {
+    display: flex;
+    flex-direction: column;
+    /* main content takes more space */
+    min-width: 300px;
+}
+.detail-page {
+   flex-direction: column;
+}
+.detail-title {
+    font-size: 2rem;
+    margin: 0 0 1rem;
+}
+
+/* The top section that contains the photo and summary side-by-side on larger screens */
+.detail-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Photo container */
+#detail-photo img {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.no-photo {
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 8px;
+}
+
+/* Summary container */
+#detail-summary {
+    flex: 1;
+    min-width: 100px;
+    line-height: 1.6;
+    padding-right: 10px;
+}
+
+/* BOOKS SECTION */
+.detail-books {
+    margin-top: 2rem;
+}
+
+.detail-books h3 {
+    margin-bottom: 1rem;
+}
+
+.detail-books ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-books li {
+    margin-bottom: 0.5rem;
+}
+
+.detail-books a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.detail-books a:hover {
+    text-decoration: underline;
+}
+
+/* SIDEBAR */
+.detail-sidebar {
+    flex: 1;
+    min-width: 200px;
+    border-left: 1px solid #ddd;
+    padding-left: 2rem;
+}
+
+/* sidebar sections */
+.sidebar-section {
+    margin-bottom: 1rem;
+}
+
+.sidebar-section strong {
+    display: inline-block;
+    width: 70px;
+    color: #555;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (min-width: 768px) {
+
+    .detail-main {
+        flex-direction: row;
+    }
+    .detail-page {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .detail-sidebar {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .detail-top {
+        flex-direction: column;
+    }
+
+    #detail-photo img,
+    .no-photo {
+        max-width: 100%;
+    }
+}
+
+.breadcrumbs {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs a {
+    color: #0077cc;
+    text-decoration: none;
+    margin: 0 0.25rem;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs .divider {
+    margin: 0 0.25rem;
+    color: #999;
 }

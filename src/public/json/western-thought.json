@@ -1,662 +1,636 @@
 {
-    "WesternPhilosophy": {
-      "PhilosophyEra": [
-        {
-          "id": "Ancient_Greek_philosophy",
-          "name": "Ancient Philosophy",
-          "startYear": "c. 600 BCE",
-          "endYear": "c. 600 CE",
-          "description": "Philosophy in the ancient Greek and Roman world, beginning with the Pre-Socratics and continuing through Neoplatonism.",
-          "Branches": [
-            {
-              "id": "Pre-Socratic_philosophy",
-              "name": "Pre-Socratic Philosophers",
-              "timeframe": "6th–5th centuries BCE",
-              "description": "Early Greek philosophers who sought natural explanations for the cosmos, predating Socrates.",
-              "thinkers": [
-                {
-                  "id": "thalesOfMiletus",
-                  "name": "Thales of Miletus",
-                  "lived": "c. 624–c. 546 BCE",
-                  "note": "Considered the first Western philosopher; proposed water as the fundamental principle."
-                },
-                {
-                  "id": "anaximander",
-                  "name": "Anaximander",
-                  "lived": "c. 610–546 BCE",
-                  "note": "Introduced the 'apeiron' (the boundless) as the source of all things."
-                },
-                {
-                  "id": "anaximenes",
-                  "name": "Anaximenes",
-                  "lived": "c. 586–c. 526 BCE",
-                  "note": "Believed air to be the primary substance through processes of rarefaction and condensation."
-                },
-                {
-                  "id": "heraclitus",
-                  "name": "Heraclitus",
-                  "lived": "c. 535–475 BCE",
-                  "note": "Emphasized constant change (flux) and the unity of opposites."
-                },
-                {
-                  "id": "parmenides",
-                  "name": "Parmenides",
-                  "lived": "c. 515–450 BCE",
-                  "note": "Argued that true being is unchanging, making change an illusion."
-                },
-                {
-                  "id": "zenoOfElea",
-                  "name": "Zeno of Elea",
-                  "lived": "c. 490–430 BCE",
-                  "note": "Famous for paradoxes challenging motion and plurality."
-                },
-                {
-                  "id": "empedocles",
-                  "name": "Empedocles",
-                  "lived": "c. 494–434 BCE",
-                  "note": "Proposed four 'roots' (earth, water, air, fire) plus Love and Strife as cosmic forces."
-                },
-                {
-                  "id": "anaxagoras",
-                  "name": "Anaxagoras",
-                  "lived": "c. 500–428 BCE",
-                  "note": "Posited that 'Mind' (Nous) sets the universe in motion; everything contains a portion of everything else."
-                },
-                {
-                  "id": "democritus",
-                  "name": "Democritus",
-                  "lived": "c. 460–370 BCE",
-                  "note": "Developed atomism, explaining the world via indivisible atoms in the void."
-                }
-              ]
-            },
-            {
-              "id": "sophists",
-              "name": "Sophists",
-              "timeframe": "5th century BCE",
-              "description": "Traveling teachers of rhetoric and virtue, often emphasizing relativism and skepticism.",
-              "thinkers": [
-                {
-                  "id": "protagoras",
-                  "name": "Protagoras",
-                  "lived": "c. 490–420 BCE",
-                  "note": "Famous for 'Man is the measure of all things,' endorsing a form of relativism."
-                },
-                {
-                  "id": "gorgias",
-                  "name": "Gorgias",
-                  "lived": "c. 483–375 BCE",
-                  "note": "Explored paradoxes of being and language, claiming 'Nothing exists.'"
-                },
-                {
-                  "id": "thrasymachus",
-                  "name": "Thrasymachus",
-                  "lived": "5th century BCE",
-                  "note": "Noted in Plato's Republic for asserting 'Justice is the advantage of the stronger.'"
-                }
-              ]
-            },
-            {
-              "id": "classicalPhilosophy",
-              "name": "Classical Philosophy (Socrates, Plato, Aristotle)",
-              "timeframe": "5th–4th centuries BCE",
-              "description": "Centered in Athens, focusing on ethics, political theory, and systematic inquiry.",
-              "thinkers": [
-                {
-                  "id": "socrates",
-                  "name": "Socrates",
-                  "lived": "469–399 BCE",
-                  "note": "Pioneered the Socratic method of questioning; emphasized self-knowledge and ethics."
-                },
-                {
-                  "id": "plato",
-                  "name": "Plato",
-                  "lived": "427–347 BCE",
-                  "note": "Founder of the Academy; advanced Theory of Forms and wrote influential dialogues."
-                },
-                {
-                  "id": "aristotle",
-                  "name": "Aristotle",
-                  "lived": "384–322 BCE",
-                  "note": "Student of Plato, tutor to Alexander the Great; systematized logic, metaphysics, ethics."
-                }
-              ]
-            },
-            {
-              "id": "hellenisticPhilosophy",
-              "name": "Hellenistic Philosophy",
-              "timeframe": "3rd century BCE–1st century CE",
-              "description": "Post-Alexander the Great’s conquests; focus on ethics and achieving tranquility.",
-              "Branches": [
-                {
-                  "id": "stoicism",
-                  "name": "Stoicism",
-                  "thinkers": [
-                    {
-                      "id": "zenoOfCitium",
-                      "name": "Zeno of Citium",
-                      "lived": "c. 334–262 BCE",
-                      "note": "Founder of Stoicism; taught virtue as the only good and living in harmony with nature."
-                    },
-                    {
-                      "id": "seneca",
-                      "name": "Seneca",
-                      "lived": "c. 4 BCE–65 CE",
-                      "note": "Roman Stoic philosopher, statesman, and dramatist."
-                    },
-                    {
-                      "id": "epictetus",
-                      "name": "Epictetus",
-                      "lived": "c. 55–135 CE",
-                      "note": "Emphasized inner freedom and self-control; wrote the Enchiridion."
-                    },
-                    {
-                      "id": "marcusAurelius",
-                      "name": "Marcus Aurelius",
-                      "lived": "121–180 CE",
-                      "note": "Roman Emperor; author of the Meditations, focusing on Stoic ethics."
-                    }
-                  ]
-                },
-                {
-                  "id": "epicureanism",
-                  "name": "Epicureanism",
-                  "thinkers": [
-                    {
-                      "id": "epicurus",
-                      "name": "Epicurus",
-                      "lived": "341–270 BCE",
-                      "note": "Advocated moderate pleasure, ataraxia (tranquility), and materialist atomism."
-                    },
-                    {
-                      "id": "lucretius",
-                      "name": "Lucretius",
-                      "lived": "c. 99–c. 55 BCE",
-                      "note": "Roman poet-philosopher who expounded Epicureanism in De Rerum Natura."
-                    }
-                  ]
-                },
-                {
-                  "id": "skepticism",
-                  "name": "Skepticism",
-                  "thinkers": [
-                    {
-                      "id": "pyrrho",
-                      "name": "Pyrrho of Elis",
-                      "lived": "c. 360–270 BCE",
-                      "note": "Founded Pyrrhonian Skepticism, advocating suspension of judgment (epoché)."
-                    },
-                    {
-                      "id": "carneades",
-                      "name": "Carneades",
-                      "lived": "c. 214–129 BCE",
-                      "note": "Head of the Platonic Academy; advanced Academic Skepticism, focusing on probability."
-                    }
-                  ]
-                },
-                {
-                  "id": "cynicism",
-                  "name": "Cynicism",
-                  "thinkers": [
-                    {
-                      "id": "diogenesOfSinope",
-                      "name": "Diogenes of Sinope",
-                      "lived": "c. 412–323 BCE",
-                      "note": "Embodied Cynic ideals of radical asceticism and living 'according to nature.'"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "neoplatonism",
-              "name": "Neoplatonism",
-              "timeframe": "3rd century CE–5th century CE",
-              "description": "Philosophical system inspired by Plato, focusing on the One and emanation, influencing early Christian thought.",
-              "thinkers": [
-                {
-                  "id": "plotinus",
-                  "name": "Plotinus",
-                  "lived": "204–270 CE",
-                  "note": "Founder of Neoplatonism; introduced concepts of the One, Nous, and the Soul’s descent."
-                },
-                {
-                  "id": "porphyry",
-                  "name": "Porphyry",
-                  "lived": "234–c. 305 CE",
-                  "note": "Student of Plotinus; wrote Isagoge (introduction to Aristotle’s categories)."
-                },
-                {
-                  "id": "proclus",
-                  "name": "Proclus",
-                  "lived": "412–485 CE",
-                  "note": "Developed a complex Neoplatonic system of triadic emanations."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "MedievalPhilosophy",
-          "name": "Medieval Philosophy",
-          "startYear": "c. 5th century",
-          "endYear": "15th century",
-          "description": "Era focused on the synthesis of classical philosophy (especially Aristotle and Plato) with Christian, Jewish, and Islamic theology.",
-          "Branches": [
-            {
-              "id": "earlyChristianPhilosophy",
-              "name": "Early Christian & Patristic Philosophy",
-              "timeframe": "c. 4th–9th centuries",
-              "thinkers": [
-                {
-                  "id": "augustineOfHippo",
-                  "name": "Augustine of Hippo",
-                  "lived": "354–430",
-                  "note": "Combined Christian doctrine with Platonism, significant for his works on sin, free will, and time."
-                },
-                {
-                  "id": "boethius",
-                  "name": "Boethius",
-                  "lived": "c. 477–524",
-                  "note": "Authored The Consolation of Philosophy, reconciling divine foreknowledge and human freedom."
-                },
-                {
-                  "id": "johnScotusEriugena",
-                  "name": "John Scotus Eriugena",
-                  "lived": "c. 800–877",
-                  "note": "Synthesized Christian thought with Neoplatonism; introduced concept of theophany."
-                }
-              ]
-            },
-            {
-              "id": "scholasticism",
-              "name": "Scholasticism",
-              "timeframe": "c. 11th–14th centuries",
-              "thinkers": [
-                {
-                  "id": "anselmOfCanterbury",
-                  "name": "St. Anselm of Canterbury",
-                  "lived": "1033–1109",
-                  "note": "Developed the ontological argument ('that than which nothing greater can be conceived')."
-                },
-                {
-                  "id": "peterAbelard",
-                  "name": "Peter Abelard",
-                  "lived": "1079–1142",
-                  "note": "Applied logical analysis in Sic et Non, highlighting theological contradictions."
-                },
-                {
-                  "id": "thomasAquinas",
-                  "name": "Thomas Aquinas",
-                  "lived": "1225–1274",
-                  "note": "Synthesized Aristotelian philosophy with Christian theology in the Summa Theologica."
-                },
-                {
-                  "id": "johnDunsScotus",
-                  "name": "John Duns Scotus",
-                  "lived": "c. 1266–1308",
-                  "note": "Emphasized 'haecceity' (thisness) and a strong voluntarist perspective."
-                },
-                {
-                  "id": "williamOfOckham",
-                  "name": "William of Ockham",
-                  "lived": "c. 1287–1347",
-                  "note": "Nominalist best known for Ockham’s Razor: 'do not multiply entities beyond necessity.'"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "RenaissancePhilosophy",
-          "name": "Renaissance Philosophy",
-          "startYear": "14th century",
-          "endYear": "17th century",
-          "description": "Marked by humanism, revived interest in classical texts, and early shifts toward modern scientific inquiry.",
-          "thinkers": [
-            {
-              "id": "niccoloMachiavelli",
-              "name": "Niccolò Machiavelli",
-              "lived": "1469–1527",
-              "note": "Wrote The Prince, focusing on political power, realism, and secular statecraft."
-            },
-            {
-              "id": "desideriusErasmus",
-              "name": "Desiderius Erasmus",
-              "lived": "1466–1536",
-              "note": "Christian humanist who criticized Church corruption and advocated for religious tolerance."
-            },
-            {
-              "id": "giovanniPicoDellaMirandola",
-              "name": "Giovanni Pico della Mirandola",
-              "lived": "1463–1494",
-              "note": "Author of Oration on the Dignity of Man; combined Platonic, Aristotelian, and esoteric traditions."
-            }
-          ]
-        },
-        {
-          "id": "EarlyModernPhilosophy",
-          "name": "Early Modern Philosophy",
-          "startYear": "17th century",
-          "endYear": "18th century",
-          "description": "Characterized by the Scientific Revolution, rationalism vs. empiricism debates, and new foundations for knowledge.",
-          "Branches": [
-            {
-              "id": "rationalism",
-              "name": "Rationalism",
-              "timeframe": "17th–early 18th century",
-              "thinkers": [
-                {
-                  "id": "reneDescartes",
-                  "name": "René Descartes",
-                  "lived": "1596–1650",
-                  "note": "Introduced methodological skepticism; 'I think, therefore I am.' Mind-body dualist."
-                },
-                {
-                  "id": "baruchSpinoza",
-                  "name": "Baruch Spinoza",
-                  "lived": "1632–1677",
-                  "note": "Advocated monism (God or Nature); wrote Ethics in a geometric style."
-                },
-                {
-                  "id": "gottfriedWilhelmLeibniz",
-                  "name": "Gottfried Wilhelm Leibniz",
-                  "lived": "1646–1716",
-                  "note": "Proposed monads, principle of sufficient reason, and 'best of all possible worlds.'"
-                }
-              ]
-            },
-            {
-              "id": "empiricism",
-              "name": "Empiricism",
-              "timeframe": "17th–18th century",
-              "thinkers": [
-                {
-                  "id": "thomasHobbes",
-                  "name": "Thomas Hobbes",
-                  "lived": "1588–1679",
-                  "note": "Materialist; Leviathan outlines a social contract justifying absolute rule."
-                },
-                {
-                  "id": "johnLocke",
-                  "name": "John Locke",
-                  "lived": "1632–1704",
-                  "note": "Mind as tabula rasa; influential on liberal political theory (natural rights)."
-                },
-                {
-                  "id": "georgeBerkeley",
-                  "name": "George Berkeley",
-                  "lived": "1685–1753",
-                  "note": "'Esse est percipi'—immaterialist holding that existence depends on perception."
-                },
-                {
-                  "id": "davidHume",
-                  "name": "David Hume",
-                  "lived": "1711–1776",
-                  "note": "Radical skeptic about causation and induction; moral sentiments root ethics."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "EnlightenmentPhilosophy",
-          "name": "Enlightenment Philosophy",
-          "startYear": "18th century",
-          "endYear": "Late 18th century",
-          "description": "Era emphasizing reason, individual rights, and the questioning of traditional authority.",
-          "thinkers": [
-            {
-              "id": "voltaire",
-              "name": "Voltaire",
-              "lived": "1694–1778",
-              "note": "Criticized religious dogma; championed freedom of speech and tolerance."
-            },
-            {
-              "id": "jeanJacquesRousseau",
-              "name": "Jean-Jacques Rousseau",
-              "lived": "1712–1778",
-              "note": "Explored freedom vs. society in The Social Contract; stressed general will."
-            },
-            {
-              "id": "immanuelKant",
-              "name": "Immanuel Kant",
-              "lived": "1724–1804",
-              "note": "Unified rationalism & empiricism; argued for the mind’s active role in experience."
-            }
-          ]
-        },
-        {
-          "id": "NineteenthCenturyPhilosophy",
-          "name": "19th-Century Philosophy",
-          "startYear": "1800",
-          "endYear": "1900",
-          "description": "Marked by German Idealism, critiques of Enlightenment, socialism, utilitarianism, and existential groundwork.",
-          "Branches": [
-            {
-              "id": "germanIdealism",
-              "name": "German Idealism",
-              "timeframe": "Late 18th–early 19th century",
-              "thinkers": [
-                {
-                  "id": "johannGottliebFichte",
-                  "name": "Johann Gottlieb Fichte",
-                  "lived": "1762–1814",
-                  "note": "Stressed the 'I' as actively positing both self and not-self."
-                },
-                {
-                  "id": "friedrichSchelling",
-                  "name": "Friedrich Wilhelm Joseph Schelling",
-                  "lived": "1775–1854",
-                  "note": "Nature and spirit as manifestations of the Absolute; creativity key."
-                },
-                {
-                  "id": "georgWilhelmFriedrichHegel",
-                  "name": "Georg Wilhelm Friedrich Hegel",
-                  "lived": "1770–1831",
-                  "note": "Developed dialectical idealism; emphasized Absolute Spirit and historical process."
-                }
-              ]
-            },
-            {
-              "id": "postHegelianThought",
-              "name": "Post-Hegelian Thought",
-              "timeframe": "Mid–late 19th century",
-              "thinkers": [
-                {
-                  "id": "arthurSchopenhauer",
-                  "name": "Arthur Schopenhauer",
-                  "lived": "1788–1860",
-                  "note": "World as Will and Representation; saw existence as driven by blind will."
-                },
-                {
-                  "id": "karlMarx",
-                  "name": "Karl Marx",
-                  "lived": "1818–1883",
-                  "note": "Class struggle and materialist conception of history; critique of capitalism."
-                },
-                {
-                  "id": "friedrichNietzsche",
-                  "name": "Friedrich Nietzsche",
-                  "lived": "1844–1900",
-                  "note": "'God is dead'; revaluation of morals; will to power."
-                }
-              ]
-            },
-            {
-              "id": "utilitarianismAndLiberalism",
-              "name": "Utilitarianism & Liberalism",
-              "timeframe": "19th century",
-              "thinkers": [
-                {
-                  "id": "jeremyBentham",
-                  "name": "Jeremy Bentham",
-                  "lived": "1748–1832",
-                  "note": "Principle of utility; hedonic calculus for maximizing happiness."
-                },
-                {
-                  "id": "johnStuartMill",
-                  "name": "John Stuart Mill",
-                  "lived": "1806–1873",
-                  "note": "Refined utilitarian ethics; championed liberty, free speech, women’s rights."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "TwentiethCenturyPhilosophy",
-          "name": "20th-Century & Contemporary Philosophy",
-          "startYear": "1900",
-          "endYear": "Present",
-          "description": "Encompasses analytic philosophy, phenomenology, existentialism, structuralism, postmodernism, and more.",
-          "Branches": [
-            {
-              "id": "analyticPhilosophy",
-              "name": "Analytic Philosophy",
-              "timeframe": "Early 20th century–Present",
-              "thinkers": [
-                {
-                  "id": "bertrandRussell",
-                  "name": "Bertrand Russell",
-                  "lived": "1872–1970",
-                  "note": "Pioneered formal logic, advocated logical analysis of language."
-                },
-                {
-                  "id": "geMoore",
-                  "name": "G.E. Moore",
-                  "lived": "1873–1958",
-                  "note": "Common-sense realism, critique of ethical naturalism."
-                },
-                {
-                  "id": "ludwigWittgenstein",
-                  "name": "Ludwig Wittgenstein",
-                  "lived": "1889–1951",
-                  "note": "Tractatus vs. Philosophical Investigations; transformation of language philosophy."
-                },
-                {
-                  "id": "willardVanOrmanQuine",
-                  "name": "Willard Van Orman Quine",
-                  "lived": "1908–2000",
-                  "note": "Critiqued the analytic-synthetic distinction; ontological relativity."
-                }
-              ]
-            },
-            {
-              "id": "phenomenologyAndExistentialism",
-              "name": "Phenomenology & Existentialism",
-              "timeframe": "Early–mid 20th century",
-              "thinkers": [
-                {
-                  "id": "edmundHusserl",
-                  "name": "Edmund Husserl",
-                  "lived": "1859–1938",
-                  "note": "Founded phenomenology; studied the structures of consciousness and intentionality."
-                },
-                {
-                  "id": "martinHeidegger",
-                  "name": "Martin Heidegger",
-                  "lived": "1889–1976",
-                  "note": "Being and Time; reoriented Western philosophy to question of Being."
-                },
-                {
-                  "id": "jeanPaulSartre",
-                  "name": "Jean-Paul Sartre",
-                  "lived": "1905–1980",
-                  "note": "Existence precedes essence; radical freedom and responsibility."
-                },
-                {
-                  "id": "simoneDeBeauvoir",
-                  "name": "Simone de Beauvoir",
-                  "lived": "1908–1986",
-                  "note": "The Second Sex; existentialist feminist examining woman as 'Other.'"
-                }
-              ]
-            },
-            {
-              "id": "structuralismPoststructuralism",
-              "name": "Structuralism & Post-Structuralism",
-              "timeframe": "Mid–late 20th century",
-              "thinkers": [
-                {
-                  "id": "claudeLeviStrauss",
-                  "name": "Claude Lévi-Strauss",
-                  "lived": "1908–2009",
-                  "note": "Applied structuralism to anthropology and myths."
-                },
-                {
-                  "id": "michelFoucault",
-                  "name": "Michel Foucault",
-                  "lived": "1926–1984",
-                  "note": "Analyzed power-knowledge in social institutions; genealogy of discourse."
-                },
-                {
-                  "id": "jacquesDerrida",
-                  "name": "Jacques Derrida",
-                  "lived": "1930–2004",
-                  "note": "Deconstruction, différance, critique of logocentrism."
-                }
-              ]
-            },
-            {
-              "id": "criticalTheory",
-              "name": "Critical Theory (Frankfurt School)",
-              "timeframe": "20th century–Present",
-              "thinkers": [
-                {
-                  "id": "maxHorkheimer",
-                  "name": "Max Horkheimer",
-                  "lived": "1895–1973",
-                  "note": "Co-founder of Frankfurt School; combined Marxism with social research."
-                },
-                {
-                  "id": "theodorAdorno",
-                  "name": "Theodor W. Adorno",
-                  "lived": "1903–1969",
-                  "note": "Dialectic of Enlightenment; critique of culture industry."
-                },
-                {
-                  "id": "herbertMarcuse",
-                  "name": "Herbert Marcuse",
-                  "lived": "1898–1979",
-                  "note": "One-Dimensional Man; critique of capitalist society."
-                },
-                {
-                  "id": "jurgenHabermas",
-                  "name": "Jürgen Habermas",
-                  "lived": "b. 1929",
-                  "note": "Communicative action and discourse ethics; public sphere theory."
-                }
-              ]
-            },
-            {
-              "id": "pragmatism",
-              "name": "American Pragmatism",
-              "timeframe": "Late 19th century–Present",
-              "thinkers": [
-                {
-                  "id": "charlesSandersPeirce",
-                  "name": "Charles Sanders Peirce",
-                  "lived": "1839–1914",
-                  "note": "Pragmatic maxim; contributions to semiotics."
-                },
-                {
-                  "id": "williamJames",
-                  "name": "William James",
-                  "lived": "1842–1910",
-                  "note": "Radical empiricism, the will to believe, religious experience."
-                },
-                {
-                  "id": "johnDewey",
-                  "name": "John Dewey",
-                  "lived": "1859–1952",
-                  "note": "Applied pragmatism to education, democracy, and experimental inquiry."
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
+  "WesternPhilosophy": {
+    "PhilosophyEra": [
+      {
+        "id": "Ancient_Greek_philosophy",
+        "name": "Ancient Philosophy",
+        "startYear": "c. 600 BCE",
+        "endYear": "c. 600 CE",
+        "description": "Philosophy in the ancient Greek and Roman world, beginning with the Pre-Socratics and continuing through Neoplatonism.",
+        "Branches": [
+          {
+            "id": "Pre-Socratic_philosophy",
+            "name": "Pre-Socratic Philosophers",
+            "timeframe": "6th–5th centuries BCE",
+            "description": "Early Greek philosophers who sought natural explanations for the cosmos, predating Socrates.",
+            "thinkers": [
+              {
+                "id": "thalesOfMiletus",
+                "name": "Thales of Miletus",
+                "lived": "c. 624–c. 546 BCE",
+                "note": "Considered the first Western philosopher; proposed water as the fundamental principle."
+              },
+              {
+                "id": "anaximander",
+                "name": "Anaximander",
+                "lived": "c. 610–546 BCE",
+                "note": "Introduced the 'apeiron' (the boundless) as the source of all things."
+              },
+              {
+                "id": "anaximenes",
+                "name": "Anaximenes of Miletus",
+                "lived": "c. 586–c. 526 BCE",
+                "note": "Believed air to be the primary substance through processes of rarefaction and condensation."
+              },
+              {
+                "id": "heraclitus",
+                "name": "Heraclitus",
+                "lived": "c. 535–475 BCE",
+                "note": "Emphasized constant change (flux) and the unity of opposites."
+              },
+              {
+                "id": "parmenides",
+                "name": "Parmenides",
+                "lived": "c. 515–450 BCE",
+                "note": "Argued that true being is unchanging, making change an illusion."
+              },
+              {
+                "id": "zenoOfElea",
+                "name": "Zeno of Elea",
+                "lived": "c. 490–430 BCE",
+                "note": "Famous for paradoxes challenging motion and plurality."
+              },
+              {
+                "id": "empedocles",
+                "name": "Empedocles",
+                "lived": "c. 494–434 BCE",
+                "note": "Proposed four 'roots' (earth, water, air, fire) plus Love and Strife as cosmic forces."
+              },
+              {
+                "id": "anaxagoras",
+                "name": "Anaxagoras",
+                "lived": "c. 500–428 BCE",
+                "note": "Posited that 'Mind' (Nous) sets the universe in motion; everything contains a portion of everything else."
+              },
+              {
+                "id": "democritus",
+                "name": "Democritus",
+                "lived": "c. 460–370 BCE",
+                "note": "Developed atomism, explaining the world via indivisible atoms in the void."
+              }
+            ]
+          },
+          {
+            "id": "sophists",
+            "name": "Sophists",
+            "timeframe": "5th century BCE",
+            "description": "Traveling teachers of rhetoric and virtue, often emphasizing relativism and skepticism.",
+            "thinkers": [
+              {
+                "id": "protagoras",
+                "name": "Protagoras",
+                "lived": "c. 490–420 BCE",
+                "note": "Famous for 'Man is the measure of all things,' endorsing a form of relativism."
+              },
+              {
+                "id": "gorgias",
+                "name": "Gorgias",
+                "lived": "c. 483–375 BCE",
+                "note": "Explored paradoxes of being and language, claiming 'Nothing exists.'"
+              },
+              {
+                "id": "thrasymachus",
+                "name": "Thrasymachus",
+                "lived": "5th century BCE",
+                "note": "Noted in Plato's Republic for asserting 'Justice is the advantage of the stronger.'"
+              }
+            ]
+          },
+          {
+            "id": "classicalPhilosophy",
+            "name": "Classical Philosophy (Socrates, Plato, Aristotle)",
+            "timeframe": "5th–4th centuries BCE",
+            "description": "Centered in Athens, focusing on ethics, political theory, and systematic inquiry.",
+            "thinkers": [
+              {
+                "id": "socrates",
+                "name": "Socrates",
+                "lived": "469–399 BCE",
+                "note": "Pioneered the Socratic method of questioning; emphasized self-knowledge and ethics."
+              },
+              {
+                "id": "plato",
+                "name": "Plato",
+                "lived": "427–347 BCE",
+                "note": "Founder of the Academy; advanced Theory of Forms and wrote influential dialogues."
+              },
+              {
+                "id": "aristotle",
+                "name": "Aristotle",
+                "lived": "384–322 BCE",
+                "note": "Student of Plato, tutor to Alexander the Great; systematized logic, metaphysics, ethics."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "HellenisticPhilosophy",
+        "name": "Hellenistic Philosophy",
+        "startYear": "3rd century BCE",
+        "endYear": "1st century CE",
+        "description": "Post-Alexander the Great’s conquests; focus on ethics and achieving tranquility.",
+        "Branches": [
+          {
+            "id": "stoicism",
+            "name": "Stoicism",
+            "thinkers": [
+              {
+                "id": "zenoOfCitium",
+                "name": "Zeno of Citium",
+                "lived": "c. 334–262 BCE",
+                "note": "Founder of Stoicism; taught virtue as the only good and living in harmony with nature."
+              },
+              {
+                "id": "seneca",
+                "name": "Seneca the Younger",
+                "lived": "c. 4 BCE–65 CE",
+                "note": "Roman Stoic philosopher, statesman, and dramatist."
+              },
+              {
+                "id": "epictetus",
+                "name": "Epictetus",
+                "lived": "c. 55–135 CE",
+                "note": "Emphasized inner freedom and self-control; wrote the Enchiridion."
+              },
+              {
+                "id": "marcusAurelius",
+                "name": "Marcus Aurelius",
+                "lived": "121–180 CE",
+                "note": "Roman Emperor; author of the Meditations, focusing on Stoic ethics."
+              }
+            ]
+          },
+          {
+            "id": "epicureanism",
+            "name": "Epicureanism",
+            "thinkers": [
+              {
+                "id": "epicurus",
+                "name": "Epicurus",
+                "lived": "341–270 BCE",
+                "note": "Advocated moderate pleasure, ataraxia (tranquility), and materialist atomism."
+              },
+              {
+                "id": "lucretius",
+                "name": "Lucretius",
+                "lived": "c. 99–c. 55 BCE",
+                "note": "Roman poet-philosopher who expounded Epicureanism in De Rerum Natura."
+              }
+            ]
+          },
+          {
+            "id": "skepticism",
+            "name": "Skepticism",
+            "thinkers": [
+              {
+                "id": "pyrrho",
+                "name": "Pyrrho",
+                "lived": "c. 360–270 BCE",
+                "note": "Founded Pyrrhonian Skepticism, advocating suspension of judgment (epoché)."
+              },
+              {
+                "id": "carneades",
+                "name": "Carneades",
+                "lived": "c. 214–129 BCE",
+                "note": "Head of the Platonic Academy; advanced Academic Skepticism, focusing on probability."
+              }
+            ]
+          },
+          {
+            "id": "cynicism",
+            "name": "Cynicism",
+            "thinkers": [
+              {
+                "id": "diogenesOfSinope",
+                "name": "Diogenes",
+                "lived": "c. 412–323 BCE",
+                "note": "Embodied Cynic ideals of radical asceticism and living 'according to nature.'"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedievalPhilosophy",
+        "name": "Medieval Philosophy",
+        "startYear": "c. 5th century",
+        "endYear": "15th century",
+        "description": "Era focused on the synthesis of classical philosophy (especially Aristotle and Plato) with Christian, Jewish, and Islamic theology.",
+        "Branches": [
+          {
+            "id": "earlyChristianPhilosophy",
+            "name": "Early Christian & Patristic Philosophy",
+            "timeframe": "c. 4th–9th centuries",
+            "thinkers": [
+              {
+                "id": "augustineOfHippo",
+                "name": "Augustine of Hippo",
+                "lived": "354–430",
+                "note": "Combined Christian doctrine with Platonism, significant for his works on sin, free will, and time."
+              },
+              {
+                "id": "boethius",
+                "name": "Boethius",
+                "lived": "c. 477–524",
+                "note": "Authored The Consolation of Philosophy, reconciling divine foreknowledge and human freedom."
+              },
+              {
+                "id": "johnScotusEriugena",
+                "name": "John Scotus Eriugena",
+                "lived": "c. 800–877",
+                "note": "Synthesized Christian thought with Neoplatonism; introduced concept of theophany."
+              }
+            ]
+          },
+          {
+            "id": "scholasticism",
+            "name": "Scholasticism",
+            "timeframe": "c. 11th–14th centuries",
+            "thinkers": [
+              {
+                "id": "anselmOfCanterbury",
+                "name": "Anselm of Canterbury",
+                "lived": "1033–1109",
+                "note": "Developed the ontological argument ('that than which nothing greater can be conceived')."
+              },
+              {
+                "id": "peterAbelard",
+                "name": "Peter Abelard",
+                "lived": "1079–1142",
+                "note": "Applied logical analysis in Sic et Non, highlighting theological contradictions."
+              },
+              {
+                "id": "thomasAquinas",
+                "name": "Thomas Aquinas",
+                "lived": "1225–1274",
+                "note": "Synthesized Aristotelian philosophy with Christian theology in the Summa Theologica."
+              },
+              {
+                "id": "johnDunsScotus",
+                "name": "Duns Scotus",
+                "lived": "c. 1266–1308",
+                "note": "Emphasized 'haecceity' (thisness) and a strong voluntarist perspective."
+              },
+              {
+                "id": "williamOfOckham",
+                "name": "William of Ockham",
+                "lived": "c. 1287–1347",
+                "note": "Nominalist best known for Ockham’s Razor: 'do not multiply entities beyond necessity.'"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RenaissancePhilosophy",
+        "name": "Renaissance Philosophy",
+        "startYear": "14th century",
+        "endYear": "17th century",
+        "description": "Marked by humanism, revived interest in classical texts, and early shifts toward modern scientific inquiry.",
+        "thinkers": [
+          {
+            "id": "niccoloMachiavelli",
+            "name": "Niccolò Machiavelli",
+            "lived": "1469–1527",
+            "note": "Wrote The Prince, focusing on political power, realism, and secular statecraft."
+          },
+          {
+            "id": "desideriusErasmus",
+            "name": "Desiderius Erasmus",
+            "lived": "1466–1536",
+            "note": "Christian humanist who criticized Church corruption and advocated for religious tolerance."
+          },
+          {
+            "id": "giovanniPicoDellaMirandola",
+            "name": "Giovanni Pico della Mirandola",
+            "lived": "1463–1494",
+            "note": "Author of Oration on the Dignity of Man; combined Platonic, Aristotelian, and esoteric traditions."
+          }
+        ]
+      },
+      {
+        "id": "EarlyModernPhilosophy",
+        "name": "Early Modern Philosophy",
+        "startYear": "17th century",
+        "endYear": "18th century",
+        "description": "Characterized by the Scientific Revolution, rationalism vs. empiricism debates, and new foundations for knowledge.",
+        "Branches": [
+          {
+            "id": "rationalism",
+            "name": "Rationalism",
+            "timeframe": "17th–early 18th century",
+            "thinkers": [
+              {
+                "id": "reneDescartes",
+                "name": "René Descartes",
+                "lived": "1596–1650",
+                "note": "Introduced methodological skepticism; 'I think, therefore I am.' Mind-body dualist."
+              },
+              {
+                "id": "baruchSpinoza",
+                "name": "Baruch Spinoza",
+                "lived": "1632–1677",
+                "note": "Advocated monism (God or Nature); wrote Ethics in a geometric style."
+              },
+              {
+                "id": "gottfriedWilhelmLeibniz",
+                "name": "Gottfried Wilhelm Leibniz",
+                "lived": "1646–1716",
+                "note": "Proposed monads, principle of sufficient reason, and 'best of all possible worlds.'"
+              }
+            ]
+          },
+          {
+            "id": "empiricism",
+            "name": "Empiricism",
+            "timeframe": "17th–18th century",
+            "thinkers": [
+              {
+                "id": "thomasHobbes",
+                "name": "Thomas Hobbes",
+                "lived": "1588–1679",
+                "note": "Materialist; Leviathan outlines a social contract justifying absolute rule."
+              },
+              {
+                "id": "johnLocke",
+                "name": "John Locke",
+                "lived": "1632–1704",
+                "note": "Mind as tabula rasa; influential on liberal political theory (natural rights)."
+              },
+              {
+                "id": "georgeBerkeley",
+                "name": "George Berkeley",
+                "lived": "1685–1753",
+                "note": "'Esse est percipi'—immaterialist holding that existence depends on perception."
+              },
+              {
+                "id": "davidHume",
+                "name": "David Hume",
+                "lived": "1711–1776",
+                "note": "Radical skeptic about causation and induction; moral sentiments root ethics."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EnlightenmentPhilosophy",
+        "name": "Enlightenment Philosophy",
+        "startYear": "18th century",
+        "endYear": "Late 18th century",
+        "description": "Era emphasizing reason, individual rights, and the questioning of traditional authority.",
+        "thinkers": [
+          {
+            "id": "voltaire",
+            "name": "Voltaire",
+            "lived": "1694–1778",
+            "note": "Criticized religious dogma; championed freedom of speech and tolerance."
+          },
+          {
+            "id": "jeanJacquesRousseau",
+            "name": "Jean-Jacques Rousseau",
+            "lived": "1712–1778",
+            "note": "Explored freedom vs. society in The Social Contract; stressed general will."
+          },
+          {
+            "id": "immanuelKant",
+            "name": "Immanuel Kant",
+            "lived": "1724–1804",
+            "note": "Unified rationalism & empiricism; argued for the mind’s active role in experience."
+          }
+        ]
+      },
+      {
+        "id": "NineteenthCenturyPhilosophy",
+        "name": "19th-Century Philosophy",
+        "startYear": "1800",
+        "endYear": "1900",
+        "description": "Marked by German Idealism, critiques of Enlightenment, socialism, utilitarianism, and existential groundwork.",
+        "Branches": [
+          {
+            "id": "germanIdealism",
+            "name": "German Idealism",
+            "timeframe": "Late 18th–early 19th century",
+            "thinkers": [
+              {
+                "id": "johannGottliebFichte",
+                "name": "Johann Gottlieb Fichte",
+                "lived": "1762–1814",
+                "note": "Stressed the 'I' as actively positing both self and not-self."
+              },
+              {
+                "id": "friedrichSchelling",
+                "name": "Friedrich Wilhelm Joseph Schelling",
+                "lived": "1775–1854",
+                "note": "Nature and spirit as manifestations of the Absolute; creativity key."
+              },
+              {
+                "id": "georgWilhelmFriedrichHegel",
+                "name": "Georg Wilhelm Friedrich Hegel",
+                "lived": "1770–1831",
+                "note": "Developed dialectical idealism; emphasized Absolute Spirit and historical process."
+              }
+            ]
+          },
+          {
+            "id": "postHegelianThought",
+            "name": "Post-Hegelian Thought",
+            "timeframe": "Mid–late 19th century",
+            "thinkers": [
+              {
+                "id": "arthurSchopenhauer",
+                "name": "Arthur Schopenhauer",
+                "lived": "1788–1860",
+                "note": "World as Will and Representation; saw existence as driven by blind will."
+              },
+              {
+                "id": "karlMarx",
+                "name": "Karl Marx",
+                "lived": "1818–1883",
+                "note": "Class struggle and materialist conception of history; critique of capitalism."
+              },
+              {
+                "id": "friedrichNietzsche",
+                "name": "Friedrich Nietzsche",
+                "lived": "1844–1900",
+                "note": "'God is dead'; revaluation of morals; will to power."
+              }
+            ]
+          },
+          {
+            "id": "utilitarianismAndLiberalism",
+            "name": "Utilitarianism & Liberalism",
+            "timeframe": "19th century",
+            "thinkers": [
+              {
+                "id": "jeremyBentham",
+                "name": "Jeremy Bentham",
+                "lived": "1748–1832",
+                "note": "Principle of utility; hedonic calculus for maximizing happiness."
+              },
+              {
+                "id": "johnStuartMill",
+                "name": "John Stuart Mill",
+                "lived": "1806–1873",
+                "note": "Refined utilitarian ethics; championed liberty, free speech, women’s rights."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TwentiethCenturyPhilosophy",
+        "name": "20th-Century & Contemporary Philosophy",
+        "startYear": "1900",
+        "endYear": "Present",
+        "description": "Encompasses analytic philosophy, phenomenology, existentialism, structuralism, postmodernism, and more.",
+        "Branches": [
+          {
+            "id": "analyticPhilosophy",
+            "name": "Analytic Philosophy",
+            "timeframe": "Early 20th century–Present",
+            "thinkers": [
+              {
+                "id": "bertrandRussell",
+                "name": "Bertrand Russell",
+                "lived": "1872–1970",
+                "note": "Pioneered formal logic, advocated logical analysis of language."
+              },
+              {
+                "id": "geMoore",
+                "name": "G. E. Moore",
+                "lived": "1873–1958",
+                "note": "Common-sense realism, critique of ethical naturalism."
+              },
+              {
+                "id": "ludwigWittgenstein",
+                "name": "Ludwig Wittgenstein",
+                "lived": "1889–1951",
+                "note": "Tractatus vs. Philosophical Investigations; transformation of language philosophy."
+              },
+              {
+                "id": "willardVanOrmanQuine",
+                "name": "Willard Van Orman Quine",
+                "lived": "1908–2000",
+                "note": "Critiqued the analytic-synthetic distinction; ontological relativity."
+              }
+            ]
+          },
+          {
+            "id": "phenomenologyAndExistentialism",
+            "name": "Phenomenology & Existentialism",
+            "timeframe": "Early–mid 20th century",
+            "thinkers": [
+              {
+                "id": "edmundHusserl",
+                "name": "Edmund Husserl",
+                "lived": "1859–1938",
+                "note": "Founded phenomenology; studied the structures of consciousness and intentionality."
+              },
+              {
+                "id": "martinHeidegger",
+                "name": "Martin Heidegger",
+                "lived": "1889–1976",
+                "note": "Being and Time; reoriented Western philosophy to question of Being."
+              },
+              {
+                "id": "jeanPaulSartre",
+                "name": "Jean-Paul Sartre",
+                "lived": "1905–1980",
+                "note": "Existence precedes essence; radical freedom and responsibility."
+              },
+              {
+                "id": "simoneDeBeauvoir",
+                "name": "Simone de Beauvoir",
+                "lived": "1908–1986",
+                "note": "The Second Sex; existentialist feminist examining woman as 'Other.'"
+              }
+            ]
+          },
+          {
+            "id": "structuralismPoststructuralism",
+            "name": "Structuralism & Post-Structuralism",
+            "timeframe": "Mid–late 20th century",
+            "thinkers": [
+              {
+                "id": "claudeLeviStrauss",
+                "name": "Claude Lévi-Strauss",
+                "lived": "1908–2009",
+                "note": "Applied structuralism to anthropology and myths."
+              },
+              {
+                "id": "michelFoucault",
+                "name": "Michel Foucault",
+                "lived": "1926–1984",
+                "note": "Analyzed power-knowledge in social institutions; genealogy of discourse."
+              },
+              {
+                "id": "jacquesDerrida",
+                "name": "Jacques Derrida",
+                "lived": "1930–2004",
+                "note": "Deconstruction, différance, critique of logocentrism."
+              }
+            ]
+          },
+          {
+            "id": "criticalTheory",
+            "name": "Critical Theory (Frankfurt School)",
+            "timeframe": "20th century–Present",
+            "thinkers": [
+              {
+                "id": "maxHorkheimer",
+                "name": "Max Horkheimer",
+                "lived": "1895–1973",
+                "note": "Co-founder of Frankfurt School; combined Marxism with social research."
+              },
+              {
+                "id": "theodorAdorno",
+                "name": "Theodor W. Adorno",
+                "lived": "1903–1969",
+                "note": "Dialectic of Enlightenment; critique of culture industry."
+              },
+              {
+                "id": "herbertMarcuse",
+                "name": "Herbert Marcuse",
+                "lived": "1898–1979",
+                "note": "One-Dimensional Man; critique of capitalist society."
+              },
+              {
+                "id": "jurgenHabermas",
+                "name": "Jürgen Habermas",
+                "lived": "b. 1929",
+                "note": "Communicative action and discourse ethics; public sphere theory."
+              }
+            ]
+          },
+          {
+            "id": "pragmatism",
+            "name": "American Pragmatism",
+            "timeframe": "Late 19th century–Present",
+            "thinkers": [
+              {
+                "id": "charlesSandersPeirce",
+                "name": "Charles Sanders Peirce",
+                "lived": "1839–1914",
+                "note": "Pragmatic maxim; contributions to semiotics."
+              },
+              {
+                "id": "williamJames",
+                "name": "William James",
+                "lived": "1842–1910",
+                "note": "Radical empiricism, the will to believe, religious experience."
+              },
+              {
+                "id": "johnDewey",
+                "name": "John Dewey",
+                "lived": "1859–1952",
+                "note": "Applied pragmatism to education, democracy, and experimental inquiry."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
-  
+}
