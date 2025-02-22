@@ -46,7 +46,7 @@ export async function fetchWikiImage(title) {
         const pages = data?.query?.pages;
         const pageId = Object.keys(pages)[0];
         const page = pages[pageId];
-    
+
 
         if (page && page.thumbnail && page.thumbnail.source) {
             return page.thumbnail.source;
@@ -84,15 +84,15 @@ export async function testFetch() {
 export async function testWikidata() {
     const entity = await fetchWikidataEntity("Q36303");
     console.log("Entity data:", entity);
-  
+
     const works = await fetchNotableWorks("Q12345");
     console.log("Notable works:", works);
-  
+
     // If you want to get books written by this author using SPARQL:
     const books = await fetchBooksByAuthor("Q12345");
     console.log("Books by author:", books);
-  }
-  
+}
+
 
 
 

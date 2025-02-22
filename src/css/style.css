@@ -276,9 +276,7 @@ a:hover {
     position: relative;
 }
 
-.card:hover {
-
-}
+.card:hover {}
 
 .card h2 {
     margin: 0;
@@ -445,7 +443,7 @@ button:hover {
         position: relative;
         left: -45px;
     }
-    
+
 }
 
 /*----------------------------------------------
@@ -587,9 +585,11 @@ button:hover {
     /* main content takes more space */
     min-width: 300px;
 }
+
 .detail-page {
-   flex-direction: column;
+    flex-direction: column;
 }
+
 .detail-title {
     font-size: 2rem;
     margin: 0 0 1rem;
@@ -680,6 +680,7 @@ button:hover {
     .detail-main {
         flex-direction: row;
     }
+
     .detail-page {
         flex-direction: column;
         padding: 1rem;
